@@ -7,3 +7,4 @@
 * [Basic HTML and CSS](https://www.freecodecamp.org/learn/responsive-web-design/)
 * [Javascript Fundamentals](https://youtu.be/w-VeNiSF_bo)
 * [Git basics](https://youtu.be/_iWGbWs7cp0)
+* [React components](https://www.youtube.com/watch?v=Cla1WwguArA&ab_channel=Codevolution)
