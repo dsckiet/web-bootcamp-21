@@ -2,18 +2,15 @@ import { useState } from "react";
 import del from "../assets/delete.svg";
 
 const Card = () => {
-  const [flip, setFlip] = useState(false);
+  const [flip, setFlip] = useState(true);
   return (
     <>
       <div className="card-container">
         <div
-          className={`card card-que ${flip ? "flip" : "anti-flip"}`}
-          onClick={(e) => {
-            setFlip(true);
-          }}
+          className={`card card-que ${flip ? "anti-flip" : "flip"} `}
+          onClick={() => setFlip(!flip)}
         >
           <div className="text-container">question</div>
-
           <img
             id="del"
             src={del}
@@ -24,13 +21,10 @@ const Card = () => {
           />
         </div>
         <div
-          className={`card card-ans ${flip ? "anti-flip" : "flip"}`}
-          onClick={(e) => {
-            setFlip(false);
-          }}
+          className={`card card-ans ${flip ? "flip" : "anti-flip"}`}
+          onClick={() => setFlip(!flip)}
         >
           <div className="text-container">answer</div>
-
           <img
             id="del"
             src={del}
